@@ -1,0 +1,12 @@
+{
+  "name": "safar-travel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive Safar travel landing page for Hajj, Umrah and UAE journeys.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node --check scripts/build.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "repository": { "type": "git", "url": "https://github.com/MuhammadWaizImran/Safar.git" }
+}

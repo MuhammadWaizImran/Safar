@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Safar — thoughtful Hajj, Umrah and UAE travel experiences. Travel with faith. Journey with confidence.">
+  <meta name="theme-color" content="#034f46">
+  <title>Safar — Your Sacred Journey</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23034f46'/%3E%3Ctext x='18' y='47' font-size='46' fill='white' font-family='Georgia'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<header class="hero" id="home">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/a2.png"><source src="assets/makka.mp4" type="video/mp4"></video>
+  <div class="hero-shade"></div>
+  <nav class="navigation" aria-label="Main navigation">
+    <a class="brand" href="#home"><svg viewBox="0 0 28 28" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="4"/><rect x="12" y="12" width="13" height="13" rx="4"/></svg>Safar</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+    <div class="nav-links" id="nav-links"><a href="#home">Home</a><a href="#packages">Packages</a><a href="#about">About Us</a><a href="#services">Services</a></div>
+    <button class="book-link" data-book="Plan my journey">Book Now</button>
+  </nav>
+  <h1 class="hero-title">Safar</h1>
+  <div class="hero-bottom">
+    <div class="hero-assurance"><div class="trip-types" aria-label="Choose your journey"><button data-book="Hajj & Royal VIP">Hajj</button><button data-book="Umrah Premium">Umrah</button><button data-book="UAE Tours">UAE Tours</button></div><div class="trust"><span>Trusted Travel Experts</span><span>Visa Assistance</span><span>Hotel &amp; Transport Included</span></div></div>
+    <div class="hero-copy"><h2>Trusted Hajj, Umrah<br>&amp; UAE Travel Services.</h2><a class="button white" href="#packages">Explore Packages</a></div>
+  </div>
+</header>
+<main>
+  <section id="about" class="about section">
+    <div class="about-intro wrap"><div><span class="eyebrow">About Us</span><h2>Travel With Faith.<br>Journey With Confidence.</h2></div><div class="about-copy"><p>We are a trusted halal travel agency dedicated to making your Hajj, Umrah, and UAE journey comfortable, organized, and meaningful.</p><a class="split-button" href="#packages"><span>Explore Packages</span><i>↗</i></a></div></div>
+    <div class="photo-marquee" aria-label="Scenes from your sacred journey"><div class="photo-track" id="photo-track"></div></div>
+  </section>
+  <section id="packages" class="section packages"><div class="section-heading reveal"><span class="eyebrow">Package Details</span><h2>Find the Right Travel<br>Package for Your Sacred<br>Journey</h2></div><div id="package-list" class="package-list"></div></section>
+  <section id="services" class="section green services"><div class="section-heading reveal"><span class="eyebrow">Services</span><h2>Everything You Need for a<br>Peaceful Hajj &amp; Umrah<br>Journey</h2></div><div id="service-grid" class="service-grid"></div></section>
+  <section id="process" class="section process"><div class="section-heading reveal"><span class="eyebrow">Travel Process</span><h2>From Planning to<br>Pilgrimage, We Make It<br>Simple</h2></div><div class="process-labels"><span>Package Selection</span><span>Booking Confirmation</span><span>Document Processing</span><span>Journey Begins</span><span>Ongoing Assistance</span></div><div class="timeline" id="timeline"></div></section>
+  <section id="destinations" class="section destinations"><div class="section-heading reveal"><span class="eyebrow">Popular Destinations</span><h2>Walk Through the Sacred<br>Places of Makkah &amp; Madinah</h2></div><div class="destination-grid" id="destination-grid"></div></section>
+  <section id="testimonials" class="section green testimonials"><div class="section-heading reveal"><span class="eyebrow">Testimonials</span><h2>Memorable Journeys,<br>Shared With Heart</h2></div><div class="testimonial-grid" id="testimonial-grid"></div><div class="testimonial-footer"><h3>Trusted by Pilgrims.<br>Guided With Care.</h3><p>Your Sacred Journey Deserves Thoughtful<br>Planning And Reliable Support.</p></div></section>
+  <section id="faq" class="section faq"><div class="section-heading reveal"><span class="eyebrow">FAQ</span><h2>Everything You Need to<br>Know Before Your Journey</h2></div><div class="faq-list" id="faq-list"></div></section>
+  <section class="community green" aria-label="Our community"><div class="community-images"><img src="assets/a1.png" alt="Madinah" loading="lazy"><img src="assets/a2.png" alt="The Holy Kaaba" loading="lazy"><img src="assets/cta1.jpg" alt="Safar community member" loading="lazy"></div><h3>Join our community</h3><div class="community-images"><img src="assets/cta2.jpg" alt="Safar community member" loading="lazy"><img src="assets/cta3.jpg" alt="Safar community member" loading="lazy"><img src="assets/a3.png" alt="A sacred journey" loading="lazy"></div></section>
+</main>
+<footer id="contact"><div class="footer-cta"><span class="eyebrow">Your Next Chapter</span><h2>Let's Begin Your Sacred<br>Journey Together</h2><p>Plan Your Hajj Or Umrah Journey With Trusted Guidance, Comfortable Travel<br>Arrangements, And Dedicated Support Every Step Of The Way.</p><a class="split-button" href="#packages"><span>Explore Packages</span><i>↗</i></a></div><div class="footer-links"><nav aria-label="Footer navigation"><a href="#home">[ HOME ]</a><a href="#packages">[ PACKAGE ]</a><a href="#about">[ ABOUT US ]</a><a href="#services">[ SERVICES ]</a></nav><a href="mailto:hello@safartravel.com">Hello@Safartravel.Com ↗</a></div><div class="footer-wordmark">Safar travels</div><div class="footer-bottom"><span>© 2026 Safar Travels. All rights reserved.</span><div><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></footer>
+<dialog id="booking" aria-labelledby="booking-title"><button class="dialog-close" aria-label="Close booking dialog">×</button><span class="eyebrow">Begin Your Journey</span><h2 id="booking-title">Let's plan your Safar.</h2><p>Choose your travel preferences and prepare your enquiry.</p><form id="booking-form"><label>Your name<input name="name" autocomplete="name" required maxlength="100" placeholder="Full name"></label><label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><div class="form-row"><label>Package<select name="package" id="booking-package"><option>Plan my journey</option><option>Umrah Economy</option><option>Umrah Premium</option><option>Hajj &amp; Royal VIP</option><option>UAE Tours</option></select></label><label>Travellers<input name="travellers" type="number" min="1" max="50" value="2" required></label></div><label>Preferred travel date<input name="date" type="date" required></label><button class="button" type="submit">Prepare enquiry ↗</button><p class="demo-note">Local preview: this prepares an email draft. No booking or payment is made.</p></form><div id="enquiry-result" hidden><p>Your enquiry is ready. Open your email app to review and send it.</p><a id="email-draft" class="button" href="mailto:hello@safartravel.com">Open email draft ↗</a></div></dialog>
+</body></html>
