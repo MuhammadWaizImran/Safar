@@ -1,20 +1,63 @@
-# Safar travel website replica
+# Safar — Your Sacred Journey
 
-An independent, responsive HTML/CSS/JavaScript recreation of the Safar travel template requested from:
-https://jiro.build/templates/agency/halal-travel-business-agency-landing-page-safar
+A responsive travel landing page for Hajj, Umrah and UAE journeys, built with HTML, CSS and vanilla JavaScript.
 
-## Preview
+**Live site:** https://safar-waiz.vercel.app
 
-From this folder run `python -m http.server 5300 --bind 127.0.0.1` and visit http://localhost:5300.
-No npm dependencies or build step. You can also open index.html directly.
+![Safar desktop preview](preview.png)
 
 ## Features
 
-- Locally stored Makkah background video and reference photography
-- Responsive navigation, gallery, package cards, services, journey timeline, testimonials and FAQs
-- Subtle entrance animations, animated photo strip, reduced-motion support
-- Accessible booking enquiry dialog with form validation and an email draft
+- Cinematic Makkah video hero with locally stored media
+- Travel packages, services and a guided journey timeline
+- Destination gallery, pilgrim stories and an accessible FAQ accordion
+- Responsive mobile navigation and reduced-motion support
+- Validated booking enquiry dialog that prepares an email draft
+- Dependency-free static build and Vercel deployment configuration
 
-This is a local front-end replica, not a connected travel booking service. Prices, testimonials, contact address and branding reproduce reference/demo content. The enquiry dialog does not submit bookings or take payment. Configure real business details and a backend before using it commercially.
+## Local development
 
-Reference media belongs to its respective owners and was obtained from the public template preview at cdn.jiro.build/Hajj. Confirm applicable template/media rights before publishing. Existing portfolio files are separate and unchanged.
+```sh
+python -m http.server 5300 --bind 127.0.0.1
+```
+
+Open **http://localhost:5300**. No package installation is required for local development.
+
+## Build and validation
+
+Requires Node.js 22 or newer.
+
+```sh
+npm run check
+npm run build
+```
+
+The build verifies HTML asset references and copies the website files into `public/`. Generated output and local Vercel credentials are excluded from Git.
+
+## Project structure
+
+```text
+├── assets/             # Photography, portraits and hero video
+├── scripts/build.mjs   # Static production build
+├── index.html          # Page structure and enquiry dialog
+├── styles.css          # Responsive layout and animations
+├── app.js              # Content data and interactions
+├── preview.png         # Desktop preview
+└── vercel.json         # Deployment settings and response headers
+```
+
+Update packages, services, destinations, testimonials and FAQs in `app.js`. Edit the hero, navigation, footer and form in `index.html`, and the visual theme in `styles.css`.
+
+## Deployment
+
+The Vercel project is named `safar`. The included configuration uses `npm run build` and serves `public/`. To release an update from this directory, run `vercel --prod --yes`. GitHub's `main` branch contains the source code; connecting automatic Git deployments requires access for the Vercel GitHub integration.
+
+## Enquiry behavior
+
+The form creates an email draft; it does not submit bookings, charge payments or store customer information on a server. Branding, prices, testimonials and `hello@safartravel.com` are reference/demo content. Replace them with verified business details when adapting this template to a real travel business.
+
+## Design and media credits
+
+Recreated from the [Safar template preview on Jiro](https://jiro.build/templates/agency/halal-travel-business-agency-landing-page-safar). Reference photography and video were provided by that public preview at `cdn.jiro.build/Hajj` and remain the property of their respective owners. No ownership or redistribution license for third-party media is asserted by this repository.
+
+Maintained by [Muhammad Waiz Imran](https://github.com/MuhammadWaizImran).
